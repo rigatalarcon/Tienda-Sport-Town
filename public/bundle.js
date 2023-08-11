@@ -190,12 +190,6 @@ const renderCarrito = () => {
 	ventanaCarrito.querySelector('.carrito__total').innerText = formatearMoneda.format(total);
 };
 
-
-
-localStorage.setItem("carrito__total",JSON.stringify(carrito__total));
-
-
-
 // Agregamos la funcionalidad de abrir carrito
 botonesAbrirCarrito.forEach((boton) => {
 	boton.addEventListener('click', (e) => {
